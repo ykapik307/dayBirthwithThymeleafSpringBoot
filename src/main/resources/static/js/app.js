@@ -13,9 +13,10 @@ butt.addEventListener('click',()=>{
 	const birthday = new Date(sDt);
 	const day1 = birthday.getDay();
 	let weekDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	let dayyy=weekDays[day1];
 	content.innerHTML=`
-	<h3>You were born on : ${weekDays[day1]}</h3>
-	<img src="images/${weekDays[day1]}.png" />
+	<h3>You were born on : ${dayyy}</h3>
+	<img src="images/${dayyy}.PNG" >
 	
 	`
 	 modal.style.display='block';
